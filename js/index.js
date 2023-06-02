@@ -9,7 +9,7 @@ Notification.requestPermission().then(function (permission) {
     }
 });
 
-navigator.serviceWorker.register('sw.js');
+navigator.serviceWorker.register('../js/sw.js');
 const button = document.getElementById('notificationButtuonID');
 button.addEventListener('click', function (e) {
     e.preventDefault();
