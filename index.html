@@ -19,18 +19,18 @@
 </head>
 
 <body>
-    <div class="container mx-auto flex flex-col justify-center items-center py-10">
-        <h1 class="text-4xl font-bold text-gray-700">Elecronic mail signature</h1>
-        <div class="w-1/2">
-            <div class="row">
+    <div class="container mx-auto flex flex-col justify-center items-center py-10 px-4">
+        <h1 class="text-2xl lg:text-4xl font-bold text-gray-700">Elecronic mail signature</h1>
+        <div class=" w-full lg:w-1/2">
+            <div class="row mt-4">
                 <div class="col-md-12">
-                    <h1>E-Signature</h1>
-                    <p>Sign in the canvas below and save your signature as an image!</p>
+                    <h1 class="font-bold text-gray-800">E-Signature</h1>
+                    <p class="text-gray-500 text-sm">Sign in the canvas below and save your signature as an image!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <canvas id="sig-canvas" class="border cursor-crosshair" width="620" height="160">
+                    <canvas id="sig-canvas" class="border cursor-crosshair w-full" height="160">
                         Get a better browser, bro.
                     </canvas>
                 </div>
@@ -44,14 +44,14 @@
             <br />
             <div class="row">
                 <div class="col-md-12">
-                    <textarea id="sig-dataUrl" class="form-control w-full"
+                    <textarea id="sig-dataUrl" class="form-control w-full text-gray-500 text-sm"
                         rows="5">Data URL for your signature will go here!</textarea>
                 </div>
             </div>
             <br />
             <div class="row w-full">
                 <div class="col-md-12 w-full">
-                    <img id="sig-image" class="w-full" src="" alt="Your signature will go here!" />
+                    <img id="sig-image" class="w-full" src="" alt="" />
                 </div>
             </div>
         </div>
